@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  nodejs-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # ports:
+    #   - "3000:3000"
+    container_name: OverseerrPlusAPI
+    volumes:
+      - /mnt/media/tv:/tv
+      - /mnt/media/anime:/anime
+      - /mnt/media/movies:/movies
+
+
+
